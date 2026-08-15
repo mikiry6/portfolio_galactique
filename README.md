@@ -25,6 +25,6 @@ L'objectif de ce projet est de présenter mes compétences de manière immersive
 
 ## 🎥 Démonstration vidéo
 
-Lien YouTube : *(à ajouter après l'upload)*
+Lien YouTube : https://youtu.be/EHJYUZHk1Nw
 
 Développé par Mikiry
