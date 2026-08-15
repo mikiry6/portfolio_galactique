@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first three.js app</title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>
+
+        <canvas id="bg"></canvas>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>
+                    <img src="/image/moi.png" alt="">
+                </span>
+                Mikiry
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" data-section="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" data-section="about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" data-section="skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" data-section="projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" data-section="contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <main class="main_block">
+
+            <!-- HOME SECTION  -->
+
+            <section id="home" class="section-hidden">
+
+                <div class="mobile-avatar">
+                    <img src="/image/moi.png">
+                </div>
+
+                <div class="hero-content">
+
+                <p class="subtitle">
+                    Bienvenue dans mon univers
+                </p>
+
+                <h1 class="hero-title">
+                    Mikiry
+                </h1>
+
+                <h2 class="hero-job">
+                    Développeur Laravel • Vue • Three.js
+                </h2>
+
+                <p class="hero-description">
+                    Je développe des applications web performantes
+                    et des expériences interactives mêlant Laravel,
+                    Vue.js, Three.js et design immersif.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="btn-primary">
+                        📞 038 06 883 39
+                    </a>
+
+                    <a  href="https://web.facebook.com/tojonirina.rakotomavo.mikirisoa" target="_blank" class="btn-secondary">
+                        Facebook
+                    </a>
+
+                </div>
+
+
+            </section>
+
+            <!-- ABOUT SECTION  -->
+
+            <section id="about" class="section-hidden">
+
+                <div class="about-content">
+
+                    <p class="about-subtitle">
+                        Qui suis-je ?
+                    </p>
+
+                    <h2>
+                        Développeur Full Stack passionné
+                        par les expériences interactives
+                    </h2>
+
+                    <p class="about-description">
+
+                        Je développe principalement avec Laravel
+                        et Vue.js pour créer des applications
+                        performantes et maintenables.
+
+                        J'aime également concevoir des expériences
+                        immersives avec Three.js afin de proposer
+                        des interfaces qui sortent de l'ordinaire.
+
+                    </p>
+
+                    <div class="about-cards">
+
+                        <div class="card">
+                            <h3>Laravel</h3>
+                            <span>Backend principal</span>
+                        </div>
+
+                        <div class="card">
+                            <h3>Vue.js</h3>
+                            <span>Frontend moderne</span>
+                        </div>
+
+                        <div class="card">
+                            <h3>Three.js</h3>
+                            <span>Expériences 3D</span>
+                        </div>
+
+                    </div>
+
+                    <div class="about_line" ></div>
+
+                </div>
+
+            </section>
+
+            <!-- SKILLS SECTION -->
+
+            <section id="skills">
+
+                <div class="skills_line" ></div>
+
+                <div class="skills-content">
+
+                    <p class="skills-subtitle">
+                        Mes compétences
+                    </p>
+
+                    <h2 class="skills-title">
+                        Technologies & Outils
+                    </h2>
+
+                    <p class="skills-description">
+                        J’utilise principalement Laravel et Vue.js
+                        pour développer des applications modernes,
+                        performantes et immersives.
+                    </p>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/JavaScript_logo.svg" alt="">
+                            </span>
+                            <h3>JavaScript</h3>
+                            <p>
+                                Applications interactives modernes
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/three_logo.svg" alt="">
+                            </span>
+                            <h3>Three.js</h3>
+                            <p>
+                                Expériences 3D immersives
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/laravel_logo.png" alt="">
+                            </span>
+                            <h3>Laravel</h3>
+                            <p>
+                                Backend robuste et maintenable
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/vue_logo.svg" alt="">
+                            </span>
+                            <h3>Vue.js</h3>
+                            <p>
+                                Interfaces fluides et réactives
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/mysql_logo.svg" alt="">
+                            </span>
+                            <h3>MySQL</h3>
+                            <p>
+                                Gestion et optimisation des données
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <span class="skill-icon">
+                                <img src="/image/blender_logo.webp" alt="">
+                            </span>
+                            <h3>Blender</h3>
+                            <p>
+                                Création et optimisation 3D
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PROJECTS SECTION -->
+
+            <div class="liste_projet" >
+
+                <div class="projet_line" ></div>
+
+                <h2>Mes Projets</h2>
+
+                <div class="globe_project Mes_projets">
+
+                    <button class="close_project">
+                        ✕
+                    </button>
+
+                    <div class="project_header">
+
+                        <p class="project_subtitle">
+                            Projet interactif
+                        </p>
+
+                        <h1 class="project_title">
+                            Globe Constellation
+                        </h1>
+
+                    </div>
+
+                    <div class="project_preview">
+
+                        <img src="/image/globe_photo.png" alt="preview projet">
+
+                    </div>
+
+                    <p class="project_description">
+
+                        Plateforme de reservation d'hotel integrant une recherche mondial grace a un globe 3D ineractif, systeme de filtre et un systeme de resrvation et paiement securiser avec stripe
+
+                    </p>
+
+                    <div class="project_stack">
+
+                        <span>Laravel</span>
+                        <span>Vue.js</span>
+                        <span>Inertia</span>
+                        <span>Three.js</span>
+
+                    </div>
+
+                    <div class="project_actions">
+
+                        <a href="https://hotelglobeproject-production.up.railway.app/"  target="_blank">
+                            Voir le projet
+                        </a>
+
+                        <a href="https://youtu.be/aMbpXcq4jKw" target="_blank">
+                            Demo video
+                        </a>
+                        
+                        <a href="https://github.com/mikiry6/hotel_globe_project.git" target="_blank">
+                            Github
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="dice_project Mes_projets">
+
+                    <button class="close_project">
+                        ✕
+                    </button>
+
+                    <div class="project_header">
+
+                        <p class="project_subtitle">
+                            Projet 360
+                        </p>
+
+                        <h1 class="project_title">
+                            Visite 360
+                        </h1>
+
+                    </div>
+
+                    <div class="project_preview">
+
+                        <img src="/image/360_photo.png" alt="preview projet">
+
+                    </div>
+
+                    <p class="project_description">
+
+                        Une petite visite 360 de d'une chambre et une salle de bain avec des hotspots et transition d'animation GSAP. 
+
+                    </p>
+
+                    <div class="project_stack">
+
+                        <span>Three.Js</span>
+                        <span>GSAP</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+
+                    </div>
+
+                    <div class="project_actions">
+
+                        <a 
+                            href="https://visite360.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Voir le projet
+                        </a>
+
+                        <a href="https://youtu.be/9Qif4XUiorM" target="_blank">
+                            Demo video
+                        </a>
+
+                        <a href="https://github.com/mikiry6/visite_360.git" target="_blank">
+                            Github
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <!-- CONTACT SECTION -->
+            <section
+                id="contact"
+                class="section-hidden contact_section"
+            >
+
+                <div class="contact_message">
+
+                </div>
+
+                <!-- contact -->
+                <div class="contact_left">
+
+                    <div class="contact_top_line"></div>
+
+                    <h2>
+                        Contact Mission
+
+                    </h2>
+                    
+
+                    <p class="contact_text">
+                        Une idée, un projet ou une collaboration ?
+                        Envoyez-moi un message et lançons
+                        quelque chose d’unique.
+                    </p>
+
+                    <form class="contact_form" id="contact-form">
+
+                        <div class="input_box">
+
+                            <input
+                                type="text"
+                                placeholder="Votre nom"
+                                id="user_name"
+                                name="user_name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="input_box">
+
+                            <input
+                                type="email"
+                                placeholder="Votre email"
+                                id="user_email"
+                                name="user_email"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="input_box">
+
+                            <textarea
+                                rows="6"
+                                placeholder="Votre message"
+                                id="message"
+                                name="message"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <button type="submit" id="button">
+
+                            Envoyer le signal
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <script type="module" src="public/src/main.js" defer></script>
+        
+        <!--EmailJS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init({
+                publicKey: "U9eAy0yfPeHGoSFQB",
+            });
+        </script>
+
+        <script src="public/src/emailSend.js" defer ></script>
+
+    </body>
+
+</html>

@@ -1,2 +1,30 @@
-# portfolio_galactique
-Petite immersion de voyage dans l'espace montrant mes différentes compétences et projets avec une fusée qui navigue entre les systèmes sur click des liens de navigation   
+# 3D Portfolio
+
+Portfolio personnel interactif développé avec Three.js et asset 3D creer et optimiser sur blender 
+
+L'objectif de ce projet est de présenter mes compétences de manière immersive à travers un environnement spatial 3D 
+
+# Fonctionnalités
+
+- Scène 3D 
+- Modèles créés avec Blender
+- Navigation libre autour de la scène
+- Présentation visuelle de mes projets
+- Animations et effets visuels
+- Interface responsive
+
+## 🛠 Technologies utilisées
+
+- Three.js
+- Draco compression
+- JavaScript
+- Blender
+- HTML
+- CSS
+- GSAP
+
+## 🎥 Démonstration vidéo
+
+Lien YouTube : *(à ajouter après l'upload)*
+
+Développé par Mikiry

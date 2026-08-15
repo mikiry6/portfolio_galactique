@@ -1,0 +1,346 @@
+
+.liste_projet{
+
+    position: relative;
+
+    top: 3.5rem;
+
+    h2{
+        display: none;
+        @media(max-width:768px){
+
+            display: block;
+
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+
+            padding-top: 5rem;
+            margin-bottom: -2.5rem;
+        }
+            
+    }
+        
+}
+
+
+.dice_project,.globe_project{
+
+    position: fixed;
+
+    top: 50%;
+    left: 75%;
+
+    transform: translate(-50%, -50%);
+
+    width: min(650px, 90vw);
+
+    padding: 2rem;
+
+    border-radius: 24px;
+
+    background:
+        rgba(10, 15, 35, 0.82);
+
+    backdrop-filter: blur(18px);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.5);
+
+    z-index: 999;
+
+    display: none;
+
+    color: white;
+
+    animation: modalAppear .35s ease;
+}
+
+/* ---------------- HEADER */
+
+.project_header{
+
+    margin-bottom: 1.5rem;
+}
+
+.project_subtitle{
+
+    color: #4ffcff;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: .5rem;
+}
+
+.project_title{
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+/* ---------------- IMAGE */
+
+.project_preview{
+
+    width: 100%;
+
+    height: 260px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    margin-bottom: 1.5rem;
+}
+
+.project_preview img{
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* ---------------- DESCRIPTION */
+
+.project_description{
+
+    color: rgba(255,255,255,0.75);
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+}
+
+/* ---------------- STACK */
+
+.project_stack{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: .8rem;
+
+    margin-bottom: 2rem;
+}
+
+.project_stack span{
+
+    padding:
+        .6rem 1rem;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    font-size: .9rem;
+}
+
+/* ---------------- BUTTONS */
+
+.project_actions{
+
+    display: flex;
+
+    gap: 1rem;
+}
+
+.project_actions a{
+
+    text-decoration: none;
+
+    padding:
+        .9rem 1.4rem;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: .25s;
+}
+
+.project_actions a:first-child{
+
+    background: #4ffcff;
+
+    color: black;
+}
+
+.project_actions a:nth-child(2){
+
+    background: #f9ffff;
+
+    color: black;
+}
+
+.project_actions a:last-child{
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+}
+
+.project_actions a:hover{
+
+    transform: translateY(-3px);
+}
+
+/* ---------------- CLOSE */
+
+.close_project{
+
+    position: absolute;
+
+    top: 1rem;
+    right: 1rem;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.close_project:hover{
+
+    background:
+        rgba(255,255,255,0.15);
+}
+
+/* ---------------- ANIMATION */
+
+@keyframes modalAppear{
+
+    from{
+
+        opacity: 0;
+
+        transform:
+            translate(-50%, -45%);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%);
+    }
+}
+
+/* ---------------- MOBILE */
+
+@media screen and (max-width: 768px){
+
+    .dice_project,.globe_project{
+
+        display: block;
+
+        position: relative;
+
+        top: 0;
+        left: 0;
+
+        transform: none;
+
+        width: calc(100vw - 2rem);
+
+        margin: 6rem auto 2rem auto;
+
+        padding: 1.3rem;
+
+        border-radius: 18px;
+
+        animation: none;
+
+        backdrop-filter: none;
+
+        transition: none;
+    }
+
+    .project_title{
+
+        font-size: 1.8rem;
+    }
+
+    .project_preview{
+
+        height: 190px;
+    }
+
+    .project_description{
+
+        font-size: .95rem;
+
+        line-height: 1.6;
+    }
+
+    .project_actions{
+
+        flex-direction: column;
+    }
+
+    .project_actions a{
+
+        text-align: center;
+
+        transition: none;
+    }
+
+    .project_actions a:hover{
+
+        transform: none;
+    }
+
+    .close_project{
+
+        display: none;
+    }
+
+    // ----------Projet Ligne
+    .projet_line{
+
+        position: absolute;
+
+        top: 2.5rem;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent,
+                #4ffcff,
+                transparent
+            );
+
+    }
+}
